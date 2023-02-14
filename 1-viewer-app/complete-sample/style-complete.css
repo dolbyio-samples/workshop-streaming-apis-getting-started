@@ -1,0 +1,18 @@
+body {
+	font-family: "Helvetica", Sans-Serif;
+	color: white;
+	background-color: black;
+	margin: auto;
+	max-width: 640px;
+}
+video {
+	border-radius: 10px;
+	margin-top: 20px;
+}
+h1 {
+	margin-top: 15%;
+}
+div {
+	margin-top: 10px;
+	font-size: large;
+}

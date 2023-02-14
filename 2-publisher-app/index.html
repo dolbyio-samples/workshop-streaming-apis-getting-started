@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dolby.io Stream Publisher App</title>
+		<meta name="description" content="Dolby.io Workshop Part #2: Building a WebRTC publisher app." />
+
+		<script src=""></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Dolby.io Workshop Part #2: WebRTC Broadcaster</h1>
+		<button id="startBtn" onclick="connectStream()">Start Stream</button>
+		<button id="endBtn" disabled onclick="stopStream()">End Stream</button>
+		<video width="640" height="360" id="videoPlayer" class="vidBox" hidden controls>
+			Your browser does not support the video playback with the video tag.
+		</video>
+		<div>
+			<a href="https://bit.ly/dolbyio-at-treehacks" target="_blank">Create a Dolby.io Account</a> |
+			<a href="https://docs.dolby.io/streaming-apis/docs/web#publish-a-stream" target="_blank"
+				>Dolby.io Streaming Docs</a
+			>
+			|
+			<a href="url">Hackathon Quick Start</a>
+		</div>
+		<b>Live broadcasts can be found at: https://viewer.millicast.com?streamId=ACCOUNT_ID/STREAM_NAME</b>
+		<script src="app.js"></script>
+	</body>
+</html>

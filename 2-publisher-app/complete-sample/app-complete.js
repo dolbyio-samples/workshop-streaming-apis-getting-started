@@ -1,0 +1,53 @@
+// Dolby.io Streaming Workshop: Part 2
+// App.js manages the publisher functionality.
+// Web Docs: https://docs.dolby.io/streaming-apis/docs/web#publish-a-stream
+
+let startBtn = document.getElementById("startBtn");
+let endBtn = document.getElementById("endBtn");
+let videoPlayer = document.getElementById("videoPlayer");
+
+function addStreamToYourVideoTag(mediaTrack) {
+	// Takes in a stream and assigns it to the <video> element
+	videoPlayer.srcObject = mediaTrack;
+	videoPlayer.hidden = false;
+	videoPlayer.autoplay = true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//Part 1: Authenticate Connection to Dolby.io Streaming servers (Millicast)
+const tokenGenerator = () =>
+	window.millicast.Director.getPublisher({
+		token: "YOUR TOKEN", 
+		streamName: "YOUR STREAM NAME",
+	});
+
+const publisher = new window.millicast.Publish("my-stream-name", tokenGenerator);
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+//Part 2: Broadcast Stream.
+async function connectStream() {
+    startBtn.disabled = true;
+	endBtn.disabled = false;
+    const mediaStream = await navigator.mediaDevices.getUserMedia({ audio: false, video: true });
+    addStreamToYourVideoTag(mediaStream);
+    
+    const broadcastOptions = {
+        mediaStream: mediaStream
+      };
+      
+      // Start broadcast
+      try {
+        await publisher.connect(broadcastOptions);
+        //To view the stream navigate to: https://viewer.millicast.com?streamId=YOUR_ACCOUNT_ID/YOUR_STREAM_NAME
+      } catch (e) {
+        console.error('Connection failed, handle error', e);
+      }
+}
+/////////////////////////////////////////////////////////////////////////////////
+
+function stopStream() {
+	//Ends Stream and resets browser.
+    publisher.stop();
+	location.reload();
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dolby.io Stream Viewer App</title>
+		<meta name="description" content="Dolby.io Workshop Part #1: Building a WebRTC stream viewing app." />
+
+		<script src=""></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Dolby.io Workshop Part #1: WebRTC Stream Viewer</h1>
+		<button id="joinBtn" onclick="connectStream()">Join Stream</button>
+		<button id="leaveBtn" disabled onclick="stopStream()">Leave Stream</button>
+		<video width="640" height="360" id="videoPlayer" class="vidBox" hidden controls>
+			Your browser does not support the video playback with the video tag.
+		</video>
+		<div>
+			<a href="https://bit.ly/dolbyio-at-treehacks" target="_blank">Create a Dolby.io Account</a> |
+			<a href="https://docs.dolby.io/streaming-apis/docs/web#viewer" target="_blank">Dolby.io Streaming Docs</a> |
+			<a href="url">Hackathon Quick Start</a>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
