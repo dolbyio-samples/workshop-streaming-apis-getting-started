@@ -21,7 +21,7 @@ const tokenGenerator = () =>
 		streamAccountId: "YOUR ACCOUNT ID",
 	});
 
-const millicastView = new window.millicast.View("ldm5fm0w", tokenGenerator);
+const millicastView = new window.millicast.View("YOUR STREAM NAME", tokenGenerator);
 /////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////
