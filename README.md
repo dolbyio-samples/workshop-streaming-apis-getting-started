@@ -7,7 +7,7 @@ This workshop will take you zero-to-hero by teaching you how to set up a WebRTC 
 - [Create a Dolby.io Account](https://bit.ly/dolbyio-at-treehacks)
 - [Dolby.io TreeHacks 2023 Quick Start Guide](https://github.com/dolbyio-samples/hackathon-quick-start/blob/main/TreeHacks2023/TreeHacks2023.md)
 - [Dolby.io WebRTC Streaming Documentation](https://docs.dolby.io/streaming-apis/docs/web)
-- ~~Workshop Recording 02/15/23~~ (Available after workshop)
+- [Workshop Recording 02/15/23](https://stanford.zoom.us/rec/play/Oheg6-MaQO4byRrwC4QIF20Lq1zXU__r0JSV3jv-XfP_GTHd2Bb7ZbfxJWYrmcrHSxiV2vQ1UBSDVa-k.LpyL19Wz3bUN1_zZ?continueMode=true&_x_zm_rtaid=7V99jghgS0KYZd5BSWc6PQ.1676568710447.8cc11bc6bd415c5cd0300d132d8cb464&_x_zm_rhtaid=979)
 
 ### Get Started
 The workshop can be divided into **2** sections:
