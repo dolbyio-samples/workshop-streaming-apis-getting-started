@@ -1,3 +1,5 @@
+# :warning: This repository is no longer maintained :warning:
+
 ## Dolby.io Streaming Getting Started Workshop with the WebSDK
 Dolby.io Streaming (formerly Millicast) is a one-to-many webRTC streaming solution for ultra low latency live streams that can scale for large audiences. 
 
